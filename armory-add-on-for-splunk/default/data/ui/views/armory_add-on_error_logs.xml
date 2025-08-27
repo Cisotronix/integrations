@@ -1,0 +1,35 @@
+<form version="1.1" theme="light">
+  <label>Validate Add-on</label>
+  <fieldset submitButton="false">
+    <input type="time" token="field1">
+      <label></label>
+      <default>
+        <earliest>-24h@h</earliest>
+        <latest>now</latest>
+      </default>
+    </input>
+  </fieldset>
+  <row>
+    <panel>
+      <title>Armory Add-on Error Logs</title>
+      <table>
+        <search>
+          <query>index=_internal source="*ta_armory_vulnerabilities.log" file="base_modinput.py*" log_level=ERROR
+| rex "file=[^\|]+\|\s(?&lt;Error&gt;.*)"
+| table _time, Error
+| sort -_time</query>
+          <earliest>$field1.earliest$</earliest>
+          <latest>$field1.latest$</latest>
+          <sampleRatio>1</sampleRatio>
+        </search>
+        <option name="count">100</option>
+        <option name="dataOverlayMode">none</option>
+        <option name="drilldown">none</option>
+        <option name="percentagesRow">false</option>
+        <option name="rowNumbers">false</option>
+        <option name="totalsRow">false</option>
+        <option name="wrap">true</option>
+      </table>
+    </panel>
+  </row>
+</form>

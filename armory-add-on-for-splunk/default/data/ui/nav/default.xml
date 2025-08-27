@@ -1,0 +1,6 @@
+<nav search_view="search" color="#65A637">
+<view name="inputs" default="true" />
+<view name="configuration"/>
+<view name="armory_add-on_error_logs" />
+<view name="search" label="Search"/>
+</nav>
