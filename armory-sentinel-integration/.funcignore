@@ -1,0 +1,47 @@
+# Ignore files for Azure Functions deployment
+
+.git*
+.vscode
+.venv
+__pycache__
+*.pyc
+*.pyo
+*.pyd
+.Python
+env
+venv
+ENV
+.env
+.env.local
+local.settings.json
+test
+.pytest_cache
+.coverage
+htmlcov
+dist
+build
+*.egg-info
+.DS_Store
+*.swp
+*.swo
+*~
+
+# Documentation (not needed in deployment)
+README.md
+DEPLOYMENT_GUIDE.md
+SECURITY.md
+PROJECT_SUMMARY.md
+QUICK_REFERENCE.md
+
+# Infrastructure files (not needed in deployment)
+infrastructure/
+deploy.sh
+
+# Development files
+config.yaml
+logs/
+*.log
+
+# IDE
+.idea/
+

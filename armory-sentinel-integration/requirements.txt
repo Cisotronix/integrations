@@ -1,0 +1,17 @@
+# Azure Function Dependencies
+azure-functions>=1.19.0
+
+# AWS SDK Dependencies
+boto3>=1.34.0
+botocore>=1.34.0
+
+# HTTP and API Dependencies  
+requests>=2.31.0
+
+# Data Processing Dependencies
+PyYAML>=6.0.1
+
+# Azure SDK Dependencies
+azure-identity>=1.15.0
+azure-keyvault-secrets>=4.8.0
+
