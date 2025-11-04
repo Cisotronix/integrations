@@ -301,7 +301,7 @@ log_info "This provides better dependency management and deployment reliability 
 # Deploy using func CLI with remote build for Python
 log_info "Deploying to Function App: $FUNCTION_APP_NAME"
 func azure functionapp publish "$FUNCTION_APP_NAME" \
-    --build remote \
+    --build remote --python \
     --no-bundler
 
 if [[ $? -eq 0 ]]; then
