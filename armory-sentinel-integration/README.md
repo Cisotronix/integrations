@@ -81,7 +81,7 @@ Edit `infrastructure/azuredeploy.parameters.json` with your values:
       "value": "armory-vuln-processor"
     },
     "location": {
-      "value": "East US"
+      "value": "East US"  // Change as per requirement
     },
     "timerSchedule": {
       "value": "0 */15 * * * *"  // Every 15 minutes
