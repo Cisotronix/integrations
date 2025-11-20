@@ -1,0 +1,62 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "projectName": {
+      "value": "armory-vuln-processor"
+    },
+    "location": {
+      "value": "Central India"
+    },
+    "functionAppSku": {
+      "value": "Y1"
+    },
+    "timerSchedule": {
+      "value": "0 */5 * * * *"
+    },
+    "enableApplicationInsights": {
+      "value": true
+    },
+    "logAnalyticsWorkspaceId": {
+      "value": "your-workspace-id-here"
+    },
+    "logAnalyticsWorkspaceKey": {
+      "value": "your-workspace-key-here"
+    },
+    "awsAccessKey": {
+      "value": "your-aws-access-key-here"
+    },
+    "awsSecretKey": {
+      "value": "your-aws-secret-key-here"
+    },
+    "awsRegion": {
+      "value": "your-aws-region-here"
+    },
+    "awsSqsQueueName": {
+      "value": "your-aws-sqs-queue-name-here"
+    },
+    "azureLogType": {
+      "value": "ArmoryVulnerability"
+    },
+    "maxMessagesPerRun": {
+      "value": 100
+    },
+    "sqsWaitTimeSeconds": {
+      "value": 10
+    },
+    "sqsMaxMessages": {
+      "value": 10
+    },
+    "tags": {
+      "value": {
+        "Application": "Armory Vulnerability Processor",
+        "ManagedBy": "ARM Template",
+        "Environment": "Production",
+        "Owner": "IT Operations",
+        "Project": "Armory - Azure Sentinel Integration",
+        "CostCenter": "Security Operations"
+      }
+    }
+  }
+}
+
